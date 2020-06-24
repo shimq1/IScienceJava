@@ -3,7 +3,7 @@ package ch03;
 public class EmployeeInformation {
 	public static void main(String[] args) {
 		String name="홍길동";
-		int year=2020;
+		int year=2019;
 		int work=2002;
 		
 		System.out.println("이름 : " + name);
