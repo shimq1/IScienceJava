@@ -1,10 +1,12 @@
 package ch02;
-
+//주석입니다.
+/*
+ * 여러줄 주석입니다.
+ * 주석을 다는것은 모든 프로그래밍의 기본입니다.
+ */
 public class HelloWorld {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("HelloWorld");
+		System.out.println("Hello World!");
+		System.out.println("심규원");
 	}
-
 }
