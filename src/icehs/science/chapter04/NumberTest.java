@@ -1,0 +1,11 @@
+package icehs.science.chapter04;
+
+public class NumberTest {
+	public static void main(String[] args) {
+		int data = 10;
+		System.out.println(data >= 0); //Âü, °ÅÁþ ¿¬»ê
+		System.out.println(data % 2 == 0);
+		System.out.println(data % 2 != 0);
+		System.out.println(data > 30);
+	}
+}
