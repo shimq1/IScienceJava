@@ -1,13 +1,35 @@
 package iches.science.chapter06;
 
 public class Account {
-	public static void main(String[] args) {
-		Account acc = new Account();
-		acc.accountName = "홍길동";
-		acc.accountId = "123-456789";
-		acc.balance = 10000;
-		acc.printAccountInfo();
-		acc.deposit(20000);
-		acc.withdraw(45000);
+	String name;
+	String accountNumber;
+	int balance;
+	
+	void accountInfo() {
+		System.out.println("계좌 " + accountNumber + "( 예금주 : " + name + " )");
+	}
+	
+	void showBalance() {
+		System.out.println("잔액 : " + balance + " 원");
+	}
+	
+	void depositMoney(int deposit) {
+		if(deposit >= 0) {
+			System.out.println(deposit + "원 입금합니다.");
+			balance += deposit;
+		}else {
+			System.out.println(deposit + "원 입금합니다.");
+			System.out.println("금액은 음수를 입력할 수 없습니다.");
+		}
+	}
+	
+	void withdrawMoney(int withdraw) {
+		if(withdraw >= 0) {
+			System.out.println(withdraw + " 원 출금합니다.");
+			balance -= withdraw;
+		}else {
+			System.out.println(withdraw + " 원 출금합니다.");
+			System.out.println("금액은 음수를 입력할 수 없습니다.");
+		}
 	}
 }

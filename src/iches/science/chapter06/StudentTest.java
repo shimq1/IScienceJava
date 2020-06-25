@@ -11,5 +11,8 @@ public class StudentTest {
 		gildong.printStudentInfo();
 		int avarage = gildong.calculateAverage();
 		System.out.println("평균 : " + avarage);
+		System.out.println("* 학번을 변경합니다!!!");
+		gildong.changeStudentId("STU0001");
+		gildong.printStudentInfo();
 	}
 }
